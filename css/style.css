@@ -1090,6 +1090,50 @@ header.scrolled .logo{
 
 /* --------------- Subscription Section Styling --------------- */
 
+.subscription{
+  overflow: hidden;
+}
+
+.sub-box{
+  background-color: var(--bg-color-2);
+  padding: 5rem;
+  width: 100%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.sub-box .heading{
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.sub-box form{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+}
+
+.subscription .map{
+  position: absolute;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.subscription .square{
+  position: absolute;
+  left: 52%;
+  bottom: 7%;
+  transform: translate(0, -50%) scale(0.95);
+}
+
 /* --------------- Footer Styling --------------- */
 
 /* --------------- 1000px Screens --------------- */
