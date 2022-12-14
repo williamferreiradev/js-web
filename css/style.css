@@ -193,11 +193,11 @@ header.scrolled .logo{
   transition: 0.3s;
 }
 
-.nav-link:hover{
+.nav-link:hover, .nav-link.active{
   color: var(--heading-color);
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after, .nav-link.active::after{
   width: 100%;
   opacity: 0.2;
 }
