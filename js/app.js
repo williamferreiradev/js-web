@@ -15,7 +15,10 @@ const images = document.querySelectorAll(".images img");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
+const links = document.querySelectorAll(".nav-link");
+
 window.addEventListener("scroll", () => {
+    activeLink();
     skillsCounter();
 
 });
@@ -136,3 +139,22 @@ const swiper = new Swiper('.swiper', {
   
     
   });
+
+// ACTIVE LINK NAV
+
+function activeLink() {
+    let sections = document.querySelectorAll("section[id]");
+    let passedSections = Array.from(sections).map((sct, i) =>{
+        return {
+            y: sct.getBoundingClientRect().top - header.offsetHeight,
+            id: i,
+        };
+    }).filter(sct => sct.y <= 0);
+
+    let currSectionID = passedSections.at(-1).id;
+
+    links.forEach(l => l.classList.remove("active") );
+    links[currSectionID].classList.add("active");
+}
+
+activeLink();
