@@ -28,6 +28,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -1135,6 +1139,38 @@ header.scrolled .logo{
 }
 
 /* --------------- Footer Styling --------------- */
+footer{
+  padding: 4rem 0;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .social-media{
+  display: flex;
+}
+
+.social-link{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 1rem;
+  background-color: var(--bg-color-1);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.social-link:hover{
+  color: var(--main-color-1);
+  background-color: transparent;
+}
 
 /* --------------- 1000px Screens --------------- */
 
