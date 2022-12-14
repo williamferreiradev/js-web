@@ -20,7 +20,6 @@ const links = document.querySelectorAll(".nav-link");
 
 const toggle_btn = document.querySelector(".toggle-btn");
 
-
 window.addEventListener("scroll", () => {
     activeLink();
     skillsCounter();
@@ -140,9 +139,8 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
-    
   });
+
 
 // ACTIVE LINK NAV
 
@@ -162,10 +160,6 @@ function activeLink() {
 }
 
 activeLink();
-
-
-
-
 
 
 
