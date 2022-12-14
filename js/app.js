@@ -117,3 +117,22 @@ function changeImage(index){
     images.forEach(img => img.classList.remove("show-image"));
     images[index].classList.add("show-image");
 };
+
+
+
+
+
+// TESTEMUNHOS 
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    speed: 500,
+    autoplay: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    
+  });
