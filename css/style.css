@@ -3,20 +3,61 @@
 
 /* --------------- Website Cores --------------- */
 
+
+
 :root {
   --hue-1: 257;
   --hue-2: 47;
-  --bg-color: hsl(var(--hue-1), 100%, 95%);
   --main-color-1: hsl(var(--hue-1), 100%, 60%);
   --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
   --main-color-2: hsl(var(--hue-2), 100%, 61%);
   --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+  --section-padding: 7rem;
+}
+
+body {
+  --bg-color: hsl(var(--hue-1), 100%, 95%);
+  --bg-color-1: hsl(var(--hue-1), 100%, 91%);
   --bg-color-2: #fff;
   --bg-color-3: hsl(var(--hue-1), 100%, 98%);
   --bg-color-transparent: rgba(255, 255, 255, 0.6);
-  --text-color: hsl(var(--hue-1), 17%, 24%);
   --heading-color: hsl(var(--hue-1), 61%, 24%);
-  --section-padding: 7rem;
+  --text-color: hsl(var(--hue-1), 17%, 63%);
+}
+
+body.dark {
+  --bg-color: hsl(var(--hue-1), 19%, 15%);
+  --bg-color-1: hsl(var(--hue-1), 21%, 11%);
+  --bg-color-2: hsl(var(--hue-1), 23%, 19%);
+  --bg-color-3: hsl(var(--hue-1), 23%, 24%);
+  --bg-color-transparent: hsla(var(--hue-1), 23%, 19%, 0.6);
+  --heading-color: hsl(var(--hue-1), 100%, 95%);
+  --text-color: hsl(var(--hue-1), 14%, 51%);
+}
+
+body.dark .st1{
+  fill: var(--hue-1), 10%, hsl(var(--hue-1), 23%, 19%);
+}
+
+body.dark .shape.square{
+  opacity: 0.07;
+}
+
+body.dark .toggle-btn{
+  background-color: var(--bg-color-3);
+}
+
+body.dark .toggle-btn:hover{
+  background-color: brightness(110%);
+}
+
+body.dark .nav-link:hover::after, 
+body.dark .nav-link.active::after{
+  opacity: 0.6;
+}
+
+body.dark .form-input:hover{
+  filter: brightness(90%);
 }
 
 /* --------------- General Styles --------------- */
