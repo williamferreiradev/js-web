@@ -519,6 +519,7 @@ header.scrolled .logo{
   border-radius: 20px;
   width: 100%;
   position: relative;
+  transition: 0.3s background-color;
 }
 
 .box-desc{
@@ -565,6 +566,7 @@ header.scrolled .logo{
   stroke-linecap: round;
   stroke-dasharray: 427;
   stroke-dashoffset: 427;
+  transition: 0.3s;
 }
 
 @keyframes progress{
@@ -582,6 +584,7 @@ header.scrolled .logo{
   color: var(--heading-color);
   font-weight: 400;
   font-size: 0.9rem;
+  transition: 0.3s;
 }
 
 .counter span{
@@ -594,6 +597,7 @@ header.scrolled .logo{
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
+  transition: 0.3s color;
 }
 
 .skills .dotes{
