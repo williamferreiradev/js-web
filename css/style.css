@@ -752,6 +752,7 @@ header.scrolled .logo{
   margin-left: 1.3rem;
   font-family: inherit;
   text-transform: uppercase;
+  transition: 0.3s color;
 }
 
 .filter-btn.mixitup-control-active{
@@ -771,6 +772,7 @@ header.scrolled .logo{
   height: 265px;
   display: grid;
   grid-template-rows: 1fr auto;
+  transition: 0.3s background-color;
 }
 
 .prt-image{
