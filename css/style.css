@@ -944,6 +944,7 @@ header.scrolled .logo{
   background-color: var(--bg-color-2);
   border-radius: 15px;
   padding: 4rem 0 2.5rem;
+  transition: 0.3s background-color;
 }
 
 .swiper-slide{
@@ -961,6 +962,7 @@ header.scrolled .logo{
   color: var(--heading-color);
   margin-bottom: 0.3rem;
   font-size: 1.05rem;
+  transition: 0.3s color;
 }
 
 .client img{
@@ -970,11 +972,13 @@ header.scrolled .logo{
 .client-info h5{
   color: var(--text-color);
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.8rem;  
+  transition: 0.3s color;
 }
 
 .client-info h5 a{
   color: var(--main-color-1);
+  transition: 0.3s color;
 }
 
 .swiper-slide .text{
@@ -1088,6 +1092,7 @@ header.scrolled .logo{
   padding: 3.5rem 3rem;
   display: flex;
   flex-direction: column;
+  transition: 0.3s background-color;
 }
 
 .contact-form h3{
@@ -1096,6 +1101,7 @@ header.scrolled .logo{
   font-weight: 500;
   margin-bottom: 1.6rem;
   line-height: 0.9;
+  transition: 0.3s color;
 }
 
 .form-input{
@@ -1166,6 +1172,7 @@ header.scrolled .logo{
   grid-template-columns: 1fr 1fr;
   column-gap: 6rem;
   align-items: center;
+  transition: 0.3s background-color;
 }
 
 .sub-box .heading{
