@@ -20,6 +20,8 @@ const links = document.querySelectorAll(".nav-link");
 
 const toggle_btn = document.querySelector(".toggle-btn");
 
+const hamburguer = document.querySelector(".hamburguer");
+
 window.addEventListener("scroll", () => {
     activeLink();
     skillsCounter();
@@ -185,3 +187,19 @@ function changeTheme(isDark){
 toggle_btn.addEventListener("click", () => {
     changeTheme(!document.body.classList.contains("dark"));
 })
+
+
+
+
+// hamburguer bnt
+
+hamburguer.addEventListener("click", () => {
+    document.body.classList.toggle("open");
+    document.body.classList.toggle("stopScrolling");
+}); 
+
+
+links.forEach(links => links.addEventListener ("click", () =>{
+    document.body.classList.remove("open");
+    document.body.classList.remove("stopScrolling");
+}))
