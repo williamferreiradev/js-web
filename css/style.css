@@ -1836,3 +1836,14 @@ footer .social-media{
   }
 }
 
+
+@media (max-width: 460px) {
+  .showcase-image{
+    width: 90%;
+  }
+
+  .btn{
+    padding: 1rem 2rem;
+    font-size: 0.7rem;
+  }
+}
